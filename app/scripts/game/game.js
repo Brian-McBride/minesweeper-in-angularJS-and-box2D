@@ -40,6 +40,10 @@ angular.module('Game', ['Grid', 'Broadcaster'])
 
     this.resetGame = function () {
      GridService.resetGame();
+      this.grid = [];
+      this.tiles = [];
+      this.craters = [];
+      this.explosions = [];
      this.newGame();
     };
 
