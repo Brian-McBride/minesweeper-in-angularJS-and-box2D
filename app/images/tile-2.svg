@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g>
+	<polygon fill="none" stroke="#666666" stroke-width="1.582" stroke-miterlimit="22.9256" points="106.665,135.976 110.313,145.633 
+		131.124,155.29 128.98,167.085 122.756,171.806 71.015,170.092 65.869,164.263 95.221,105.472 106.665,57.411 94.654,52.69 
+		71.051,78.227 67.187,49.047 96.368,28.194 121.473,34.239 134.131,73.543 	"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="99.9985" y1="26.6904" x2="99.9985" y2="173.4118" gradientTransform="matrix(1 0 0 -1 0 200)">
+		<stop  offset="0" style="stop-color:#00BF1C"/>
+		<stop  offset="1" style="stop-color:#67CC75"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M106.665,135.976l3.648,9.657l20.811,9.657l-2.145,11.796l-6.224,4.721l-51.742-1.714l-5.146-5.83
+		l29.352-58.791l11.444-48.061L94.654,52.69L71.051,78.227l-3.864-29.18l29.18-20.853l25.105,6.045l12.658,39.304L106.665,135.976z"
+		/>
+</g>
+</svg>

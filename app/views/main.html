@@ -1,0 +1,20 @@
+<div minesweeper class="minesweeper"  ng-controller="GameController as ctrl">
+    <div class="frame">
+                <div class="game-heading">
+                    <div class="logo"><img src="images/logo.png"></div>
+                    <div class="menu"><button ng-click="ctrl.game.resetGame()" type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-refresh"></span> Restart
+                    </button></div>
+                </div>
+        <div class="game-styling well-lg">
+            <div gameboard id="game-container">
+                <div crater ng-repeat="crater in ctrl.game.craters" class="crater-container"></div>
+                <div gamegrid ng-repeat="cell in ctrl.game.grid" class="gridcell count-{{cell.minesNearby}}"></div>
+                <div tilegrid ng-repeat="tile in ctrl.game.tiles" x="tile.x" y="tile.y" r="tile.rotation" ng-click="ctrl.game.revealTile( $index )" ng-right-click="ctrl.game.rClickHandeler($index)" class="tilecell {{tile.tileState}}"></div>
+                <div explosion ng-repeat="explosion in ctrl.game.explosions" class="boom"></div>
+                <div class="debug"><canvas width="600" height="487.5" id="debugstage"> </canvas></div>
+            </div>
+        </div>
+    </div>
+</div>
+

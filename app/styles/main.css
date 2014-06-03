@@ -1,0 +1,218 @@
+/* line 13, main.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+/* line 21, main.scss */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #f8f8f8;
+}
+
+/* line 31, main.scss */
+.minesweeper {
+  margin: 0px;
+  background-image: url("../images/backdrop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* line 39, main.scss */
+.debug {
+  display: inline-block;
+  z-index: 50;
+  position: absolute;
+  margin: 0px 0px;
+  pointer-events: none;
+}
+
+/* line 48, main.scss */
+.frame {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 55, main.scss */
+.game-heading {
+  margin: 0px;
+  padding: 20px;
+  height: 100px;
+  max-height: 100px;
+}
+/* line 61, main.scss */
+.game-heading .logo {
+  float: left;
+}
+/* line 65, main.scss */
+.game-heading .menu {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+/* line 72, main.scss */
+.game-styling {
+  margin: 0 auto;
+  padding: 10px;
+  width: 620px;
+  background-color: #2a201f;
+}
+
+/* line 80, main.scss */
+#game-container {
+  background-image: url("../images/cavetex.jpg");
+  background-size: 512px;
+  background-color: #746b6b;
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 89, main.scss */
+#game-container .gridcell {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  z-index: 11;
+  position: absolute;
+  margin: 0px 0px;
+  text-align: center;
+  font-size: 15px;
+}
+/* line 100, main.scss */
+#game-container .tilecell {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  z-index: 12;
+  position: absolute;
+  margin: 0px 0px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+/* line 114, main.scss */
+#game-container .revealed {
+  display: none;
+}
+/* line 118, main.scss */
+#game-container .exploded {
+  display: none;
+}
+/* line 122, main.scss */
+#game-container .flagged {
+  background-image: url(../images/tile-flagged.svg);
+}
+/* line 126, main.scss */
+#game-container .blank {
+  background-image: url(../images/tile-blank.svg) !important;
+}
+/* line 130, main.scss */
+#game-container .count-0 {
+  background-image: none;
+}
+/* line 135, main.scss */
+#game-container .count-1 {
+  background-image: url("../images/tile-1.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-2 {
+  background-image: url("../images/tile-2.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-3 {
+  background-image: url("../images/tile-3.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-4 {
+  background-image: url("../images/tile-4.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-5 {
+  background-image: url("../images/tile-5.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-6 {
+  background-image: url("../images/tile-6.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-7 {
+  background-image: url("../images/tile-7.svg") !important;
+  background-size: 75%;
+}
+/* line 135, main.scss */
+#game-container .count-8 {
+  background-image: url("../images/tile-8.svg") !important;
+  background-size: 75%;
+}
+/* line 141, main.scss */
+#game-container .crater-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/splat.svg);
+  opacity: .4;
+  z-index: 10;
+  position: absolute;
+  margin: 0px 0px;
+}
+/* line 151, main.scss */
+#game-container .boom {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/explosionsprite.svg);
+  background-size: 3000px 200px;
+  background-repeat: no-repeat;
+  z-index: 20;
+  position: absolute;
+  margin: 0px 0px;
+  overflow: hidden;
+  pointer-events: none;
+  display: none;
+}
+/* line 165, main.scss */
+#game-container .boom.ng-enter {
+  -webkit-animation: exploding 0.8s steps(15) forwards;
+  -moz-animation: exploding 0.8s steps(15) forwards;
+  -ms-animation: exploding 0.8s steps(15) forwards;
+  -o-animation: exploding 0.8s steps(15) forwards;
+  animation: exploding 0.8s steps(15) forwards;
+  display: block;
+}
+
+@-webkit-keyframes fastshow {
+  /* line 180, main.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 181, main.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fastshow {
+  /* line 185, main.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 186, main.scss */
+  to {
+    opacity: 1;
+  }
+}

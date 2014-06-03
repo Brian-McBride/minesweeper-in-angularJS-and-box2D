@@ -1,0 +1,59 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- Add your site or application content here -->
+<div ng-app="minesweeperApp" class="container" ng-include="'views/main.html'"></div>
+
+
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.1/json3.min.js"></script>
+<![endif]-->
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-resource.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-animate.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-cookies.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- CDN resources -->
+<script src="//code.createjs.com/soundjs-0.5.2.min.js"></script>
+<script src="//code.createjs.com/preloadjs-0.4.1.min.js"></script>
+
+<!-- 3rd party helpers -->
+<script src="scripts/jquery.keyframes.min.js"></script>
+<script src="scripts/customevents/customevents.js"></script>
+<script src="scripts/Box2dWeb-2.1.a.3.min.js"></script>
+<script src="scripts/jquery.velocity.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/grid/grid.js"></script>
+<script src="scripts/game/game.js"></script>
+<script src="scripts/grid/griddirective.js"></script>
+<script src="scripts/tile/tiledirective.js"></script>
+<script src="scripts/tile/rightclickdirective.js"></script>
+<script src="scripts/explosions/explosiondirective.js"></script>
+<script src="scripts/crater/craterdirective.js"></script>
+<script src="scripts/game/boarddirective.js"></script>
+<script src="scripts/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

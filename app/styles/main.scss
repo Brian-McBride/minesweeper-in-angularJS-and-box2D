@@ -1,0 +1,187 @@
+//$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+//@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+
+
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #f8f8f8;
+}
+
+
+
+// Minesweeper game setup
+
+.minesweeper {
+  margin: 0px;
+  background-image: url('../images/backdrop.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.debug {
+  display: inline-block;
+  z-index: 50;
+  position: absolute;
+  margin: 0px 0px;
+  pointer-events:none;
+
+}
+
+.frame {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+}
+
+.game-heading {
+  margin: 0px;
+  padding: 20px;
+  height: 100px;
+  max-height: 100px;
+
+  .logo {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+}
+
+.game-styling {
+  //margin: 0px, 20px, 20px, 20px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 620px;
+  background-color: #2a201f;
+}
+
+#game-container {
+  background-image: url('../images/cavetex.jpg');
+  background-size: 512px;
+  background-color: #746b6b;
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .gridcell {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    z-index: 11;
+    position: absolute;
+    margin: 0px 0px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .tilecell {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    z-index: 12;
+    position: absolute;
+    margin: 0px 0px;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+
+  .revealed {
+    display: none;
+  }
+
+  .exploded {
+    display: none;
+  }
+
+  .flagged {
+    background-image: url(../images/tile-flagged.svg);
+  }
+
+  .blank {
+    background-image: url(../images/tile-blank.svg) !important;
+  }
+
+  .count-0 {
+    background-image: none;
+  }
+
+  @for $i from 1 through 8 {
+    .count-#{$i} {
+      background-image: url( '../images/tile-#{$i}.svg' ) !important;
+      background-size: 75%;
+    }
+  }
+
+  .crater-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/splat.svg);
+    opacity: .4;
+    z-index: 10;
+    position: absolute;
+    margin: 0px 0px;
+  }
+
+  .boom {
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/explosionsprite.svg);
+    background-size: 3000px 200px;
+    background-repeat: no-repeat;
+    z-index: 20;
+    position: absolute;
+    margin: 0px 0px;
+    overflow: hidden;
+    pointer-events:none;
+
+    display: none;
+
+    &.ng-enter {
+      -webkit-animation: exploding .8s steps(15) forwards;
+      -moz-animation: exploding .8s steps(15) forwards;
+      -ms-animation: exploding .8s steps(15) forwards;
+      -o-animation: exploding .8s steps(15) forwards;
+      animation: exploding .8s steps(15) forwards;
+
+      display: block;
+    }
+
+  }
+
+}
+
+@-webkit-keyframes fastshow {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@keyframes fastshow {
+  from { opacity:0; }
+  to { opacity:1; }
+}
